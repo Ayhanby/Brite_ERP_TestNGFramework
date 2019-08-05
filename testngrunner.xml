@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Login tests">
+    <test name="Login Tests">
+        <classes>
+            <class name="com.Brite_ERP.tests.ComponentTests.Login_Functionality.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Correct Information Tests">
+        <classes>
+            <class name="com.Brite_ERP.tests.ComponentTests.CRM_Functionality.CorrectInformationTest"/>
+        </classes>
+    </test>
+
+
+</suite>

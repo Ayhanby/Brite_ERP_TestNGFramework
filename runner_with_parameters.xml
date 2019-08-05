@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke test" verbose="1">
+    <test name="Login test with parameters">
+        <parameter name="username" value="eventscrmmanager68@info.com"/>
+        <parameter name="password" value="eventscrmmanager"/>
+        <classes>
+            <class name="com.Brite_ERP.tests.ComponentTests.Login_Functionality.LoginTest">
+                <methods>
+                    <include name="loginWithParameters"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Regression" verbose="1">
+    <test name="Regression">
+        <parameter name="test" value="regression"></parameter>
+        <classes>
+            <class name="com.Brite_ERP.tests.ComponentTests.CRM_Functionality.CorrectInformationTest"/>
+            <class name="com.Brite_ERP.tests.ComponentTests.Login_Functionality.LoginTest">
+                <methods>
+                    <exclude name="loginWithParameters"></exclude>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="WebOrders Automation Smoke Tests" verbose="2" parallel="classes" thread-count="2">
+
+    <test name="Correct Information Test using Firefox">
+        <parameter name="browser" value="chrome"></parameter>
+        <packages>
+            <package name="com.Brite_ERP.tests.ComponentTests.CRM_Functionality"></package>
+        </packages>
+    </test>
+    <test name="Correct Information Test using Chrome">
+        <parameter name="browser" value="firefox"></parameter>
+        <packages>
+            <package name="com.Brite_ERP.tests.ComponentTests.CRM_Functionality"></package>
+        </packages>
+    </test>
+
+</suite>
